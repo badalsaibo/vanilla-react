@@ -3,17 +3,25 @@
     "@babel/cli": "^7.22.10",
     "@babel/core": "^7.22.10",
     "@babel/preset-env": "^7.22.10",
-    "@babel/preset-react": "^7.22.5"
+    "@babel/preset-react": "^7.22.5",
+    "babel-loader": "^9.1.3",
+    "webpack-cli": "^5.1.4"
   },
   "name": "vanilla-react",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "transpile": "babel app.js --out-file dist/app.js && babel component --out-dir dist/component"
+    "transpile": "babel app.js --out-file dist/app.js && babel component --out-dir dist/component",
+    "build": "webpack "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.88.2"
+  }
 }
