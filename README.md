@@ -11,3 +11,5 @@
    --caveats--
 2. Had to import React whereve we are using JSX.
 3. Just webpack isn't enough webpack-cli is needed to run the script.
+4. Used html as a template to include on the build output and automatically import those bundle js.
+5. Interestingly these script tags are `defer`red by default.
